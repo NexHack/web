@@ -1,13 +1,9 @@
 import React from 'react'
-import  './style.css'
-function Register() {
+const Register=()=> {
     return (
-        <div>
         
       <div className="base-container" >
         <div className="header">Register</div>
-        <div className="content">
-          
           <div className="form">
                 <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -35,15 +31,13 @@ function Register() {
                 <input type="text" name="Phone" placeholder="College Name" />
                 </div>
           </div>
-        </div>
-        <div className="footer">
           <button type="button" className="btn">
           Register
           </button>
-        </div>
+        
       </div>
   
-        </div>
+     
     )
 }
 

@@ -1,20 +1,14 @@
 import React from 'react'
-import { Link, Route, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import  './style.css'
-function Login() {
+const  Login=()=> {
   const padding = {
     paddingRight: 5,
   }
-    return (
-        <div>
-        
+    return ( 
       <div className="base-container" >
         <div className="header">Login</div>
-        <div className="content">
-          <div className="image">
-            {/* <img src={loginImg} /> */}
-          </div>
           <div className="form">
             <div className="form-group">
               <label htmlFor="email">Email</label>
@@ -25,24 +19,18 @@ function Login() {
               <input type="password" name="password" placeholder="password" required="required"/>
             </div>
           </div>
-        </div>
-        <div className="footer">
           <button type="button" className="btn">
             Login
           </button>
-          <div>
+          <div className="register_btn">
             New User ?
             <Link style={padding} to='/register'>
               <button type="button" className="btn">
                 Register
               </button>
             </Link>
-            </div>
-
-        </div>
+          </div>
       </div>
-  
-        </div>
     )
 }
 
