@@ -1,4 +1,6 @@
 import { Link, Route, Switch } from 'react-router-dom'
+import Login from './Login/Login'
+import Register from './Login/Register'
 
 const Menu = () => {
   const padding = {
@@ -42,17 +44,17 @@ const Mentor = () => (
     <h1>This is Mentor Page.</h1>
   </div>
 )
-const Login = () => (
-  <div>
-    <h1>This is Login Page.</h1>
-    <Link to='/register'>New User?</Link>
-  </div>
-)
-const Register = () => (
-  <div>
-    <h1>Register here.</h1>
-  </div>
-)
+// const Login = () => (
+//   <div>
+//     <h1>This is Login Page.</h1>
+//     <Link to='/register'>New User?</Link>
+//   </div>
+// )
+// const Register = () => (
+//   <div>
+//     <h1>Register here.</h1>
+//   </div>
+// )
 const Home = () => {
   const padding = {
     paddingRight: 5,
