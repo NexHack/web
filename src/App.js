@@ -70,6 +70,8 @@ const Home = () => {
     </div>
   )
 }
+
+const Footer = () => <div>Footer here.</div> //Fix my styling
 //Please separate above this comment into their own files.
 const App = () => {
   return (
@@ -95,6 +97,7 @@ const App = () => {
           <Home />
         </Route>
       </Switch>
+      <Footer />
     </div>
   )
 }
