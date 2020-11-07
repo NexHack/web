@@ -30,7 +30,7 @@ const Login = () => {
         <div>
           password:{' '}
           <input
-            type='text'
+            type='password'
             value={password}
             name='Password'
             onChange={({ target }) => setPassword(target.value)}
