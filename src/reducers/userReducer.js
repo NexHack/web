@@ -7,7 +7,7 @@ export const login = (username, password) => async dispatch => {
 
     window.localStorage.setItem('loggedAppUser', JSON.stringify(loggedInUser))
 
-    userService.setToken(loggedInUser.token)
+    userService.setToken(loggedInUser.access)
     dispatch({
       type: 'LOGIN',
       data: loggedInUser,
@@ -34,7 +34,7 @@ export const check = () => async dispatch => {
   const loggedUserJSON = window.localStorage.getItem('loggedAppUser')
   if (loggedUserJSON) {
     const loggedInUser = JSON.parse(loggedUserJSON)
-    userService.setToken(loggedInUser.token)
+    userService.setToken(loggedInUser.access)
     dispatch({
       type: 'CHECK',
       data: loggedInUser,
