@@ -12,11 +12,14 @@ export const login = (username, password) => async dispatch => {
       type: 'LOGIN',
       data: loggedInUser,
     })
+    console.info(`Welcome ${loggedInUser.name}`)
     // dispatch(notify(`Welcome ${loggedInUser.name}`))
   } catch (error) {
     if (JSON.stringify(error).includes('401')) {
+      console.error('Wrong Credentials')
       // dispatch(notify('Wrong Credentials', 'error'))
     } else {
+      console.error('Internet/Server Issue')
       // dispatch(notify('Internet/Server Issue', 'error'))
     }
   }
@@ -37,6 +40,7 @@ export const check = () => async dispatch => {
       data: loggedInUser,
     })
     // dispatch(notify(`Welcome ${loggedInUser.name}`))
+    console.info(`Welcome ${loggedInUser.name}`)
   }
 }
 
