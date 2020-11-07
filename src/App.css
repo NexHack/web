@@ -1,0 +1,108 @@
+.home{
+    text-emphasis-color: rgb(109, 101, 101);
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+    
+   
+  }
+  h4{
+      text-emphasis-color:  rgb(194, 156, 238);
+     width: 10%;
+      margin: auto;
+      outline: none;
+    border: none;
+    background: rgb(49, 49, 49);
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  
+  z-index: 999;
+  vertical-align: middle;
+  text-align: horizontal;
+    
+    
+
+    text-align: center;
+
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+
+  .button{
+    
+
+    font-size: 1.3rem;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    margin-left: 35rem;
+    cursor: pointer;
+    position: inline-block;
+    transition: all 0.35s;
+    outline: none;  
+    width: 280px;
+    height: 75px; 
+    text-align: center;
+    display: inline-block;
+  }
+  h1{
+    font-size: 5.5rem;
+    text-align: center;
+    background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+
+  }
+  .cointainer{
+   
+   width: 20%;
+
+  }
+  h2{
+    color: rgba(236, 228, 228, 0.986);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1300px;
+  text-decoration: none;
+  height: 200px;
+  transition: all 0.3s ease;
+  }
+p{
+  color: rgba(218, 211, 211, 0.76);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+}

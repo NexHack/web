@@ -2,28 +2,33 @@ import { Link, Route, Switch } from 'react-router-dom'
 import Login from './components/Login'
 import Register from './components/Register'
 
+import './App.css'
 const Menu = () => {
   const padding = {
-    paddingRight: 5,
+    paddingRight: 1,
+     
   }
+  
   return (
-    <div>
+    <div classname="home" >
+    
       <Link style={padding} to='/'>
-        Home
+       <h4>Home</h4> 
       </Link>
+      
       <Link style={padding} to='/login'>
-        Login
+        <h4>Login</h4>
       </Link>
 
       <Link style={padding} to='/team'>
-        Team
+        <h4>Team</h4>
       </Link>
 
       <Link style={padding} to='/mentor'>
-        Mentorship
+       <h4>Mentorship</h4>
       </Link>
       <Link style={padding} to='/about'>
-        About
+       <h4>About</h4> 
       </Link>
     </div>
   )
@@ -31,17 +36,17 @@ const Menu = () => {
 
 const About = () => (
   <div>
-    <h1>This is About Page.</h1>
+    <h1> About Us</h1>
   </div>
 )
 const Team = () => (
   <div>
-    <h1>This is Team Page.</h1>
+    <h1> Team Formation</h1>
   </div>
 )
 const Mentor = () => (
   <div>
-    <h1>This is Mentor Page.</h1>
+    <h1> Find Mentor </h1>
   </div>
 )
 
@@ -50,16 +55,38 @@ const Home = () => {
     paddingRight: 5,
   }
   return (
-    <div>
-      <h1>This is Homepage.</h1>
-      <Link style={padding} to='/team'>
-        Find a Team
-      </Link>
+  <div >
+    <h1>CollabLABS 1.0</h1>
 
-      <Link style={padding} to='/mentor'>
-        Find a Mentor
-      </Link>
-    </div>
+    <div classname="cointainer">
+         <div  >
+         <h2>Why you need a team?</h2>
+         <p>Find friends who want to grow in career as you want to
+         hkfhhfdshfhshfdkhk
+         dskhskh
+          </p>
+             <button class="button">Find TEAM
+                <Link style={padding} to='/team'>
+             </Link>
+             </button>
+             
+         </div>
+         <div>
+<h2 >Why you need a mentor?</h2>
+         <p>Now get mentorship by professionals 
+         djffljsldfjshfdshdfks
+         sfkdshfkshfkdhskdlffkshfksdkhskvhdkvkdhkhkhgk
+         b</p>
+             <button class="button"> Find MENTOR
+           <Link style={padding} to='/mentor'>
+             
+            </Link>
+             </button>
+             
+          </div>
+     
+     </div> 
+   </div>
   )
 }
 
@@ -67,7 +94,7 @@ const Footer = () => <div>Footer here.</div> //Fix my styling
 //Please separate above this comment into their own files.
 const App = () => {
   return (
-    <div>
+    <div classname="home">
       <Menu />
       <Switch>
         <Route path='/about'>
