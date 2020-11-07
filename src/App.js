@@ -1,7 +1,9 @@
 import { Link, Route, Switch } from 'react-router-dom'
 import Login from './Login/Login'
 import Register from './Login/Register'
-
+import InputSkills from './Team/InputSkills'
+import TeamList from './Team/TeamList'
+import NewTeam from './Team/NewTeam'
 const Menu = () => {
   const padding = {
     paddingRight: 5,
@@ -84,7 +86,13 @@ const App = () => {
           <About />
         </Route>
         <Route path='/team'>
-          <Team />
+          <InputSkills/>
+        </Route>
+        <Route path='/teamList'>
+          <TeamList/>
+        </Route>
+        <Route path='/newTeam'>
+          <NewTeam/>
         </Route>
         <Route path='/mentor'>
           <Mentor />
