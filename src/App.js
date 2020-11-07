@@ -1,9 +1,9 @@
 import { Link, Route, Switch } from 'react-router-dom'
-import Login from './Login/Login'
-import Register from './Login/Register'
-import InputSkills from './Team/InputSkills'
-import TeamList from './Team/TeamList'
-import NewTeam from './Team/NewTeam'
+import Login from './components/Login/Login'
+import Register from './components/Login/Register'
+import InputSkills from './components/Team/InputSkills'
+import TeamList from './components/Team/TeamList'
+import NewTeam from './components/Team/NewTeam'
 const Menu = () => {
   const padding = {
     paddingRight: 5,
